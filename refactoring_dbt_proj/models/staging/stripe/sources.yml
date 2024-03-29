@@ -2,9 +2,19 @@ version: 2
 
 sources:
   - name: stripe
-    database: raw
     tables:
       - name: payment
         columns:
-          - name: ORDERID
-            quote: true
+          - name: id
+            data_type: integer
+          - name: orderid
+            data_type: integer
+          - name: paymentmethod
+            data_type: text
+          - name: status
+            data_type: text
+          - name: amount
+            data_type: integer
+          - name: created
+            data_type: date
+
